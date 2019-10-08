@@ -1,13 +1,77 @@
+html { overflow-y: hidden; } 
 aside
-{
-	float: right;
-}
+
 img
 {
-	float: left;
+	 
 }
-p
+.photo
 {
-	color: blue;
+	margin-left:500px;
+ 	margin-top:100px;
+ 	overflow:hidden;
+    -webkit-border-radius:300px;
+    -moz-border-radius:300px;
+    border-radius:300px;
+    width:300px;
+    height:300px;
+    border: 10px white solid;
 }
+
+.photo:hover
+{
+    animation: animation 5s; /* On utilise "ma super animation" définie plus tôt */
+}
+
+@keyframes animation {
+
+    50% {
+        transform: translateX(150px) rotate(360deg);
+    }
+    100% {
+        transform: translateX(0px) rotate(0deg);
+    }
+}
+
+li a:hover{
+  background-color: #A2C6F9;
+}
+
+.active {
+  background-color: black;
+ 	color: white; 	
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0px -10px;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+body { 
+	    background: #A2C6F9;
+ color: #FFFFFF;
+ font-family: Arial, Helvetica, sans-serif;
+
+ }
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
 
